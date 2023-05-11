@@ -13,7 +13,6 @@ class PageController extends Controller
     }
     public function Movie() {
         $movies = Movie::all();
-        dd($movies);
         return view('listmovie',compact('movies'));
     }
 }
